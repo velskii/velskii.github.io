@@ -1,6 +1,6 @@
-import { generateShortCode } from "./lib";
+import { generateShortCode } from "./lib.ts";
 
-const kv = await DelayNode.openKv();
+const kv = await Deno.openKv();
 
 export type ShortLink = {
   shortCode: string;

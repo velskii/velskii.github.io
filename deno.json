@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "dev": "deno serve --env --watch -R src/main.ts",
+    "dev": "deno serve --env --watch -R --unstable-kv src/main.ts",
     "build": "deno build",
     "test": "deno test tests/",
     "prod": "deno task test && deno task build"
