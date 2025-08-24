@@ -1,7 +1,4 @@
 {
-  "lock": {
-    "frozen": true
-  },
   "vendor": true,
   "tasks": {
     "build": "                deno run --lock --cached-only --allow-write=./out --allow-read --allow-run --allow-net --allow-import         ./src/main.ts build --profile",
