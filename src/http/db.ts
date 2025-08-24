@@ -1,4 +1,4 @@
-import { generateShortCode } from "./lib.ts";
+import { generateShortCode } from "../utilities/lib.ts";
 
 const kv = await Deno.openKv();
 

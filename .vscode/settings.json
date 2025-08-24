@@ -1,0 +1,7 @@
+{
+  "spellright.language": ["en_US"],
+  "spellright.documentTypes": ["markdown", "latex", "plaintext", "djot"],
+  "spellright.parserByClass": {
+    "djot": { "parser": "markdown" }
+  }
+}
