@@ -11,6 +11,7 @@ jobs:
   CI:
     runs-on: ubuntu-latest
     permissions:
+      contents: read
       pages: write
       id-token: write
     steps:
@@ -25,3 +26,6 @@ jobs:
         with:
           path: ./out/www
       - uses: actions/deploy-pages@v4
+
+  deploy:
+    environment: github-pages
