@@ -175,7 +175,6 @@ async function build(params: {
   const paths = [
     "favicon.svg",
     "favicon.png",
-    "resume.pdf",
     "css/*",
     "assets/*",
     "assets/resilient-parsing/*",
