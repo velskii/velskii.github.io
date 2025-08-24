@@ -3,7 +3,7 @@
   "tasks": {
     "build": "deno run --lock --allow-write=./out --allow-read --allow-run --allow-net --allow-import --allow-env       ./src/main.ts build --profile",
     "watch": "rm -rf ./out && deno run --lock --cached-only --allow-write=./out --allow-read --allow-run --allow-net --allow-import --watch ./src/main.ts watch",
-    "open": "live-server --host 127.0.0.1 --port 8080 ./out/www & cmd /c start 'http://127.0.0.1:8080'",
+    "open": "cmd /c \"start http://127.0.0.1:8080 && live-server ./out/www --host 127.0.0.1 --port 8080\"",
     
     "serve": "deno task watch & deno task open",
     "touch": "deno run --lock --cached-only --allow-write=./content/posts ./src/main.ts touch",
