@@ -1,4 +1,3 @@
-/** @jsx h */
 // deno-lint-ignore-file no-explicit-any
 import { escapeHtml, h, Raw, render, VNode } from "./tsx.ts";
 import { Post as PostData } from "./main.ts";
