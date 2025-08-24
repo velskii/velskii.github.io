@@ -165,7 +165,7 @@ async function build(params: {
   }
 
   const redirects = [
-    ["/2024/09/32/-what-is-io-uring.html", "/2024/09/23/what-is-io-uring.html"],
+    ["/2025/08/23/-start-from-chaos.html", "/2025/08/23/start-from-chaos.html"],
   ];
 
   for (const [from, to] of redirects) {

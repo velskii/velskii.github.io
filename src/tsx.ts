@@ -35,9 +35,11 @@ export function h(
   props: Record<string, any> | null,
   ...children: VNode[]
 ): VNode {
-  return typeof tag === "function"
-    ? tag({ ...props, children })
-    : { tag, props: props || {}, children };
+  return {
+    tag,
+    props: props || {},
+    children,
+  };
 }
 
 export const Fragment = (props: { children: VNode[] }) => props.children;

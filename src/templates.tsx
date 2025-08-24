@@ -1,10 +1,12 @@
+/** @jsx h */
+/** @jsxFrag Fragment */
 // deno-lint-ignore-file no-explicit-any
 import { escapeHtml, h, Raw, render, VNode } from "./tsx.ts";
 import { Post as PostData } from "./main.ts";
 import { FeedEntry as FeedEntryData } from "./blogroll.ts";
 
-const site_url = "https://matklad.github.io";
-const blurb = "Matklad's Arts&Crafts";
+const site_url = "https://velskii.github.io";
+const blurb = "velskii's Arts&Crafts";
 
 export function html_ugly(node: VNode, doctype = "<!DOCTYPE html>"): string {
   return `${doctype}\n${render(node)}`;
@@ -76,7 +78,7 @@ function Base({
         <link
           rel="alternate"
           type="application/rss+xml"
-          title="matklad"
+          title="velskii"
           href={`${site_url}/feed.xml`}
         />
         <Fonts />
@@ -87,7 +89,7 @@ function Base({
         <header>
           <nav>
             <a class="title" href="/">
-              matklad
+              velskii
             </a>
             <a href="/about.html">About</a>
             <a href="/links.html">Links</a>
@@ -100,7 +102,7 @@ function Base({
         <footer>
           <p>
             <a
-              href={`https://github.com/matklad/matklad.github.io/edit/master${src}`}
+              href={`https://github.com/velskii/velskii.github.io/edit/master${src}`}
             >
               <Icon name="edit" />
               Fix typo
@@ -111,14 +113,14 @@ function Base({
               Subscribe
             </a>
 
-            <a href="mailto:aleksey.kladov+blog@gmail.com">
+            <a href="mailto:feiliangphp@gmail.com">
               <Icon name="email" />
               Get in touch
             </a>
 
-            <a href="https://github.com/matklad">
+            <a href="https://github.com/velskii">
               <Icon name="github" />
-              matklad
+              velskii
             </a>
           </p>
         </footer>
@@ -139,7 +141,7 @@ export function Page(name: string, content: HtmlString) {
   return (
     <Base
       path={`/${name}`}
-      title="matklad"
+      title="velskii"
       description={blurb}
       src={`/content/${name}.dj`}
       extra_css={name === "resume" ? "resume.css" : undefined}
@@ -160,7 +162,7 @@ export function PostList({ posts }: { posts: PostData[] }) {
   ));
 
   return (
-    <Base path="" title="matklad" description={blurb} src="/src/templates.tsx">
+    <Base path="" title="velskii" description={blurb} src="/src/templates.tsx">
       <ul class="post-list">{list_items}</ul>
     </Base>
   );
@@ -198,7 +200,7 @@ export function BlogRoll({ posts }: { posts: FeedEntryData[] }) {
   ));
 
   return (
-    <Base path="" title="matklad" description={blurb} src="/src/templates.tsx">
+    <Base path="" title="velskii" description={blurb} src="/src/templates.tsx">
       <ul class="post-list">{list_items}</ul>
     </Base>
   );
@@ -266,10 +268,10 @@ function Feed({ posts }: { posts: PostData[] }) {
       <link href={site_url} rel="alternate" type="text/html" />
       <updated>{new Date().toISOString()}</updated>
       <id>{`${site_url}/feed.xml`}</id>
-      <title type="html">matklad</title>
+      <title type="html">velskii</title>
       <subtitle>{blurb}</subtitle>
       <author>
-        <name>Alex Kladov</name>
+        <name>Feiliang Zhou</name>
       </author>
       {entries}
     </feed>
@@ -290,7 +292,7 @@ function FeedEntry({ post }: { post: PostData }) {
       <updated>{yyyy_mm_dd(post.date)}T00:00:00+00:00</updated>
       <id>{`${site_url}${post.path.replace(".html", "")}`}</id>
       <author>
-        <name>Alex Kladov</name>
+        <name>Feiliang Zhou</name>
       </author>
       <summary type="html">
         <Raw unsafe={`<![CDATA[${post.summary}]]>`} />

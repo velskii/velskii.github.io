@@ -3,7 +3,8 @@
   "tasks": {
     "build": "deno run --lock --allow-write=./out --allow-read --allow-run --allow-net --allow-import --allow-env       ./src/main.ts build --profile",
     "watch": "rm -rf ./out && deno run --lock --cached-only --allow-write=./out --allow-read --allow-run --allow-net --allow-import --watch ./src/main.ts watch",
-    "open": "live-server --host 127.0.0.1 --port 8080 ./out/www & open 'http://127.0.0.1:8080'",
+    "open": "live-server --host 127.0.0.1 --port 8080 ./out/www & cmd /c start 'http://127.0.0.1:8080'",
+    
     "serve": "deno task watch & deno task open",
     "touch": "deno run --lock --cached-only --allow-write=./content/posts ./src/main.ts touch",
     "spell": "deno run --lock --cached-only  --allow-read=./content/posts --allow-write=./content/posts --allow-env --allow-run ./src/main.ts spell",
@@ -28,8 +29,10 @@
     "@std/assert": "jsr:@std/assert@1"
   },
   "compilerOptions": {
-    "jsx": "react-jsx",
-    "jsxImportSource": "react"
+    "jsx": "react",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment"
+
   },
   "lint": {
     "exclude": ["src/testdata/", "src/fixtures/**/*.ts"],

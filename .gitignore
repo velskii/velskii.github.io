@@ -1,3 +1,5 @@
 .env
-.out
+out/
+vendor/
 .deno.lock
+node_modules/
