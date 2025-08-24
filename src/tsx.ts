@@ -81,7 +81,7 @@ export function render(vnode: VNode): string {
     return `<${tag}${attrs ? " " + attrs : ""}${self_closing ? "/" : ""}>`;
   }
 
-  const renderedChildren = children.map(render).join("");
+  const renderedChildren = (children ?? []).map(render).join("");
   return `<${tag}${attrs ? " " + attrs : ""}>${renderedChildren}</${tag}>`;
 }
 
