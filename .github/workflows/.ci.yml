@@ -19,7 +19,7 @@ jobs:
         with:
           deno-version: v2.x
 
-      - run deno task build --blogroll
+      - run: deno task build --blogroll
 
       - uses: actions/upload-pages-artifact@v3
         with:
