@@ -50,7 +50,7 @@ The images you might see in the Task #3 usually depict everyday situations. Here
 
 ## Task #4 Making Predictions
 
-For Task #4, the images are often related to the scenes in Task #3, but you need to think ahead. Here are some possible scenario:
+For Task #4, the images are often related to the scenes in Task #3, but you need to think ahead. Here are some possible scenarios:
 
 1. Continuation of an Activity:
 
@@ -71,7 +71,7 @@ The key is that the images are generally everyday scenes, and the predictions ar
 1. Analyze the Current Situations:
 
 - Look at what's happening in the image right now.
-- Identity the key people, objects, and actions.
+- Identify the key people, objects, and actions.
 
 2. Consider the context:
 
@@ -87,33 +87,10 @@ The key is that the images are generally everyday scenes, and the predictions ar
 
 - Make sure your prediction is realistic and fits the context of the scene.
 
-### Questions and Sample Answer:
+### Questions and Sample Answers:
 
-- Example Task #3 Prompt:
+1. Example Task #3 Prompt:
 
-Image Description: A bustling farmers' market. There are stalls with fresh fruits and vegetables, people are shopping, and a vendor is handing a bag of produce to a customer.
-
-- Sample Answer:
-
-In this image, we see a lively farmers' market. On the left side, there's a stall full of colorful fresh fruits and vegerables, and a vendor is handing a bag of produce to a customer who looks pleased with their purchase.
-
-In the background, people are browsing the stalls, and you can see a variety of produce on display.
-
-The atmosphere feels vibrant and cheerful, with people enjoying their time shopping for fresh, local produce.
-
-- Task #4 Making predictions:
-
-Same Image: The family is still at the farmers' market, and the vendor is handing over the produce.
-
-- Sample Answer:
-
-Given that the customer has just received their produce, I predict that they will soon head to the next stall or possibly finish their shopping.
-The market seems busy, so it's likely that more people will continue to arrive and shop.
-Overall, the market will stay lively for a while longer.
-
----
-
-Example Task #3 Prompt 2:
 You are looking at a picture of a park. There are children playing soccer, a couple sitting on a bench eating ice cream, a man walking his dog, and a group of teenagers riding bicycle. Describe the scene.
 
 - Sample Answer (Approximate 60 seconds)
@@ -137,9 +114,37 @@ You are looking at a picture of a park. There are children playing soccer, a cou
 - Sample Answer (Approximate 60 seconds)
 
 I think the children who are playing soccer might continue their game for a while, but soon they could get tired and take a break.
+
 The couple on the bench will probably finish their ice cream and then go for a short walk around the park.
+
 The man walking his dog may stop to let his dog play on the grass, or he might run into someone he knows and have a chat.
 
 As for the teenagers on their bicycles, I think they are likely to ride around the park a few more times and then leave together.
 
 Overall, it seems like everyone will continue to enjoy the nice weather and spend more time relaxing in the park.
+
+2. Example Task #3 Prompt:
+
+Image Description: A bustling farmers' market. There are stalls with fresh fruits and vegetables, people are shopping, and a vendor is handing a bag of produce to a customer.
+
+- Sample Answer:
+
+In this image, we see a lively farmers' market. On the left side, there's a stall full of colorful fresh fruits and vegerables, and a vendor is handing a bag of produce to a customer who looks pleased with their purchase.
+
+In the background, people are browsing the stalls, and you can see a variety of produce on display.
+
+The atmosphere feels vibrant and cheerful, with people enjoying their time shopping for fresh, local produce.
+
+- Task #4 Making predictions:
+
+Same Image: The family is still at the farmers' market, and the vendor is handing over the produce.
+
+- Sample Answer:
+
+Given that the customer has just received their produce, I predict that they will soon head to the next stall or possibly finish their shopping.
+
+The market seems busy, so it's likely that more people will continue to arrive and shop.
+
+Overall, the market will stay lively for a while longer.
+
+---
